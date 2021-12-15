@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>SHA-256 hashing algorithm</title>
+    </head>
+    <body>
+        <input type="text" id="prehash" style="border-radius: 50pt;" placeholder="UnHashed code">
+        <input type="text" id="saltlen" style="border-radius: 50pt;" placeholder="salt length (for use of salt) optional">
+        <script src="./hasher.js"></script>
+        <button onclick="sha256()" style="border-radius: 50pt;">Hash It!</button>
+        <button onclick="saltySha256()" style="border-radius: 50pt;">Hash It With Salt!</button>
+        <a id="afterhash">No hash yet</a>
+    </body>
+</html>
